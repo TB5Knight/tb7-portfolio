@@ -7,11 +7,11 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer__container">
         <p className="footer__copy">
-          &copy; {year} TB7Knight. All rights reserved.
+          &copy; {year} Taylor Burdgess portfolio. All rights reserved.
         </p>
         <div className="footer__links">
           <a
-            href="https://github.com"
+            href="https://github.com/TB5Knight"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
@@ -19,7 +19,7 @@ const Footer = () => {
             GitHub
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/tripp-burdgess7"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
