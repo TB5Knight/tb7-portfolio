@@ -8,22 +8,22 @@ const projects = [
     id: 1,
     title: 'Hype Pilot',
     description:
-      'A dynamic platform built to manage and amplify brand hype campaigns. Features real-time analytics, campaign scheduling, and audience engagement tools.',
-    tags: ['React', 'Node.js', 'REST API'],
+      'This is my planner design app called Hype Pilot. The app allows users to add tasks with due dates, view tasks in a calendar, label tasks by priority (Top Priority, Mid Priority, or Low Priority), track their progress, and receive reminder alerts for all tasks and upcoming due dates.Users can create an account and log in to access their personalized planner.',
+    tags: ['React', 'Node.js', 'Supabase', 'Vercel'],
     image: hypePilot,
     imageAlt: 'Hype Pilot app screenshot',
-    link: 'https://github.com',
+    link: 'https://hype-pilot-app.vercel.app/',
     linkLabel: 'View Project',
   },
   {
     id: 2,
     title: 'Knight Hype Studio',
     description:
-      'A creative studio dashboard for managing content drops, brand assets, and community engagement — all in one sleek interface.',
-    tags: ['React', 'CSS Modules', 'Firebase'],
+      'This is a creative art studio website I designed for DIG 4503C called KnightHypeStudio. The website allows users to create and explore digital art. It was designed with a mobile-responsive layout, ensuring it functions smoothly on both mobile devices and desktop screens.',
+    tags: ['HTML', 'CSS Stylesheets', 'Netlify'],
     image: knightHypeStudio,
     imageAlt: 'Knight Hype Studio app screenshot',
-    link: 'https://github.com',
+    link: 'https://knighthypestudio3.netlify.app/',
     linkLabel: 'View Project',
   },
 ];
