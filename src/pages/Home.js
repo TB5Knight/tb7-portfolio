@@ -31,24 +31,12 @@ const Home = () => {
         </div>
 
         <div className="hero__visual" aria-hidden="true">
-          <div className="hero__avatar">TB7</div>
+          <div className="hero__avatar">TBurdgess7</div>
           <div className="hero__ring hero__ring--1" />
           <div className="hero__ring hero__ring--2" />
         </div>
       </section>
 
-      <section className="highlights">
-        {[
-          { label: 'Projects Built', value: '10+' },
-          { label: 'Years Coding', value: '3+' },
-          { label: 'Technologies', value: '15+' },
-        ].map(({ label, value }) => (
-          <div key={label} className="highlight-card">
-            <span className="highlight-card__value">{value}</span>
-            <span className="highlight-card__label">{label}</span>
-          </div>
-        ))}
-      </section>
     </main>
   );
 };
