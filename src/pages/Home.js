@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import heroImage from '../img/hero-image.jpg';
+import aiImage from '../img/ai-image.jpg';
 import './Home.css';
 
 const Home = () => {
@@ -16,9 +17,8 @@ const Home = () => {
           <h1 className="hero__name">Taylor Burdgess</h1>
           <h2 className="hero__title">Web Designer</h2>
           <p className="hero__description">
-            I build clean, performant web applications with a focus on great
-            user experiences. Passionate about turning ideas into polished
-            digital products.
+            A designer passionate about creating clean, thoughtful, 
+            and user-friendly designs.
           </p>
           <div className="hero__cta">
             <Link to="/projects" className="btn btn--primary">
@@ -30,10 +30,10 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="hero__visual" aria-hidden="true">
-          <div className="hero__avatar">TBurdgess7</div>
-          <div className="hero__ring hero__ring--1" />
-          <div className="hero__ring hero__ring--2" />
+        <div className="hero__visual">
+          <img src={aiImage} alt="Taylor Burdgess" className="hero__avatar" />
+          <div className="hero__ring hero__ring--1" aria-hidden="true" />
+          <div className="hero__ring hero__ring--2" aria-hidden="true" />
         </div>
       </section>
 
