@@ -1,41 +1,29 @@
+import hypePilot from '../img/hype-pilot.png';
+import knightHypeStudio from '../img/knighthypestudio.png';
 import './Projects.css';
 
 const projects = [
   {
     id: 1,
-    title: 'Portfolio Website',
+    title: 'Hype Pilot',
     description:
-      'A clean, responsive personal portfolio built with React and React Router. Features smooth navigation and a dark-mode design system.',
-    tags: ['React', 'CSS', 'React Router'],
-    github: 'https://github.com',
-    live: null,
+      'A dynamic platform built to manage and amplify brand hype campaigns. Features real-time analytics, campaign scheduling, and audience engagement tools.',
+    tags: ['React', 'Node.js', 'REST API'],
+    image: hypePilot,
+    imageAlt: 'Hype Pilot app screenshot',
+    link: 'https://github.com',
+    linkLabel: 'View Project',
   },
   {
     id: 2,
-    title: 'Task Manager App',
+    title: 'Knight Hype Studio',
     description:
-      'A full-stack task management application with user authentication, drag-and-drop boards, and real-time updates via WebSockets.',
-    tags: ['React', 'Node.js', 'Express', 'MongoDB'],
-    github: 'https://github.com',
-    live: null,
-  },
-  {
-    id: 3,
-    title: 'Weather Dashboard',
-    description:
-      'A weather dashboard that pulls live forecast data from a public API. Supports city search, hourly forecasts, and a 7-day outlook.',
-    tags: ['JavaScript', 'REST API', 'CSS'],
-    github: 'https://github.com',
-    live: null,
-  },
-  {
-    id: 4,
-    title: 'E-Commerce Store',
-    description:
-      'A front-end e-commerce prototype with a product catalog, cart management, and checkout flow built purely in React with Context API.',
-    tags: ['React', 'Context API', 'CSS Modules'],
-    github: 'https://github.com',
-    live: null,
+      'A creative studio dashboard for managing content drops, brand assets, and community engagement — all in one sleek interface.',
+    tags: ['React', 'CSS Modules', 'Firebase'],
+    image: knightHypeStudio,
+    imageAlt: 'Knight Hype Studio app screenshot',
+    link: 'https://github.com',
+    linkLabel: 'View Project',
   },
 ];
 
@@ -49,8 +37,17 @@ const Projects = () => {
         </header>
 
         <div className="projects__grid">
-          {projects.map(({ id, title, description, tags, github, live }) => (
+          {projects.map(({ id, title, description, tags, image, imageAlt, link, linkLabel }) => (
             <article key={id} className="project-card">
+
+              <div className="project-card__image-wrap">
+                <img
+                  src={image}
+                  alt={imageAlt}
+                  className="project-card__image"
+                />
+              </div>
+
               <div className="project-card__body">
                 <h2 className="project-card__title">{title}</h2>
                 <p className="project-card__description">{description}</p>
@@ -62,26 +59,18 @@ const Projects = () => {
                   ))}
                 </ul>
               </div>
+
               <div className="project-card__footer">
                 <a
-                  href={github}
+                  href={link}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="project-card__link"
                 >
-                  GitHub &rarr;
+                  {linkLabel} &rarr;
                 </a>
-                {live && (
-                  <a
-                    href={live}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="project-card__link project-card__link--live"
-                  >
-                    Live &rarr;
-                  </a>
-                )}
               </div>
+
             </article>
           ))}
         </div>
