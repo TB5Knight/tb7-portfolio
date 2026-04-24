@@ -1,0 +1,99 @@
+.about {
+  padding: 6rem 0 4rem;
+}
+
+.about__container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ── Bio ────────────────────────────────────────────────────── */
+.about__bio {
+  margin-bottom: 3.5rem;
+}
+
+.about__text p {
+  color: #94a3b8;
+  font-size: clamp(0.95rem, 2.5vw, 1.05rem);
+  line-height: 1.8;
+  margin: 0 0 1.2rem;
+}
+
+.about__text p:last-child {
+  margin-bottom: 0;
+}
+
+/* ── Skills ─────────────────────────────────────────────────── */
+.skills__heading {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #e2e8f0;
+  margin: 0 0 1.75rem;
+}
+
+.skills__grid {
+  display: grid;
+  /* use min() so the column never exceeds the container width */
+  grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr));
+  gap: 1rem;
+}
+
+.skill-group {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  padding: 1.25rem 1.25rem;
+  transition: border-color 0.2s;
+}
+
+.skill-group:hover {
+  border-color: rgba(124, 106, 255, 0.25);
+}
+
+.skill-group__category {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #7c6aff;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: 0 0 0.85rem;
+}
+
+.skill-group__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-tag {
+  background: rgba(124, 106, 255, 0.1);
+  border: 1px solid rgba(124, 106, 255, 0.2);
+  color: #c4b5fd;
+  font-size: 0.82rem;
+  font-weight: 500;
+  padding: 0.3rem 0.75rem;
+  border-radius: 6px;
+}
+
+/* ── Mobile ─────────────────────────────────────────────────── */
+@media (max-width: 480px) {
+  .about {
+    padding: 5.5rem 0 3rem;
+  }
+
+  .about__container {
+    padding: 0 1.25rem;
+  }
+
+  .skills__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about__bio {
+    margin-bottom: 2.5rem;
+  }
+}
