@@ -21,7 +21,7 @@ const Navbar = () => {
     <nav className={`navbar${scrolled ? ' navbar--scrolled' : ''}`}>
       <div className="navbar__container">
         <NavLink to="/" className="navbar__logo">
-          TB7
+          TBurdgess7
         </NavLink>
 
         <button
