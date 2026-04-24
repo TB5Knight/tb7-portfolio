@@ -42,6 +42,22 @@ a {
   color: inherit;
 }
 
+/* ── Shared hero background (Home, About, Projects) ─────────── */
+.page-bg {
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  /* fixed creates a subtle parallax; falls back gracefully on mobile */
+  background-attachment: fixed;
+}
+
+@media (max-width: 768px) {
+  /* fixed attachment causes blur/jank on iOS — use scroll instead */
+  .page-bg {
+    background-attachment: scroll;
+  }
+}
+
 /* ── Shared page header (About, Projects, Contact) ──────────── */
 .page-header {
   margin-bottom: 2.75rem;

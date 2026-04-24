@@ -1,5 +1,6 @@
 import hypePilot from '../img/hype-pilot.png';
 import knightHypeStudio from '../img/knighthypestudio.png';
+import heroImage from '../img/hero-image.jpg';
 import './Projects.css';
 
 const projects = [
@@ -29,7 +30,12 @@ const projects = [
 
 const Projects = () => {
   return (
-    <main className="projects">
+    <main
+      className="projects page-bg"
+      style={{
+        backgroundImage: `linear-gradient(rgba(10,10,10,0.80), rgba(10,10,10,0.90)), url(${heroImage})`,
+      }}
+    >
       <div className="projects__container">
         <header className="page-header">
           <p className="page-header__tag">What I've built</p>
