@@ -8,7 +8,7 @@ const Home = () => {
     <main
       className="home page-bg"
       style={{
-        backgroundImage: `linear-gradient(rgba(10,10,10,0.78), rgba(10,10,10,0.88)), url(${heroImage})`,
+        backgroundImage: `linear-gradient(rgba(10,10,10,0.82), rgba(10,10,10,0.92)), url(${heroImage})`,
       }}
     >
       <section className="hero">

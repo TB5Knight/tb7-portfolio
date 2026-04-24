@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import heroImage from '../img/hero-image.jpg';
 import './Contact.css';
 
 const initialForm = { name: '', email: '', message: '' };
@@ -24,7 +25,12 @@ const Contact = () => {
   };
 
   return (
-    <main className="contact">
+    <main
+      className="contact page-bg"
+      style={{
+        backgroundImage: `linear-gradient(rgba(10,10,10,0.82), rgba(10,10,10,0.92)), url(${heroImage})`,
+      }}
+    >
       <div className="contact__container">
         <header className="page-header">
           <p className="page-header__tag">Let's talk</p>
@@ -41,11 +47,11 @@ const Contact = () => {
             <ul className="contact__details">
               <li>
                 <span className="contact__detail-label">Email</span>
-                <span className="contact__detail-value">hello@tb7knight.dev</span>
+                <span className="contact__detail-value">ta116473@ucf.edu</span>
               </li>
               <li>
                 <span className="contact__detail-label">Location</span>
-                <span className="contact__detail-value">United States</span>
+                <span className="contact__detail-value">Orlando, FL</span>
               </li>
             </ul>
           </div>

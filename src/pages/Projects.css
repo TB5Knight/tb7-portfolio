@@ -16,8 +16,8 @@
 
 /* ── Card ───────────────────────────────────────────────────── */
 .project-card {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 16px;
   display: flex;
   flex-direction: column;
@@ -26,9 +26,9 @@
 }
 
 .project-card:hover {
-  border-color: rgba(124, 106, 255, 0.4);
+  border-color: rgba(199, 249, 204, 0.45);
   transform: translateY(-4px);
-  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.25);
 }
 
 /* ── Image ──────────────────────────────────────────────────── */
@@ -36,8 +36,8 @@
   width: 100%;
   aspect-ratio: 16 / 9;
   overflow: hidden;
-  background: #0d0d1c;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  background: #778DA9;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .project-card__image {
@@ -65,12 +65,12 @@
 .project-card__title {
   font-size: 1.2rem;
   font-weight: 700;
-  color: #e2e8f0;
+  color: #E0E1DD;
   margin: 0;
 }
 
 .project-card__description {
-  color: #94a3b8;
+  color: rgba(224, 225, 221, 0.8);
   font-size: 0.93rem;
   line-height: 1.7;
   margin: 0;
@@ -87,9 +87,9 @@
 }
 
 .project-card__tag {
-  background: rgba(124, 106, 255, 0.1);
-  border: 1px solid rgba(124, 106, 255, 0.2);
-  color: #a78bfa;
+  background: rgba(199, 249, 204, 0.1);
+  border: 1px solid rgba(199, 249, 204, 0.2);
+  color: #C7F9CC;
   font-size: 0.78rem;
   font-weight: 500;
   padding: 0.25rem 0.65rem;
@@ -99,7 +99,7 @@
 /* ── Footer / link ──────────────────────────────────────────── */
 .project-card__footer {
   padding: 1rem 1.75rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .project-card__link {
@@ -108,14 +108,14 @@
   gap: 0.35rem;
   font-size: 0.9rem;
   font-weight: 600;
-  color: #7c6aff;
+  color: #C7F9CC;
   text-decoration: none;
   min-height: 44px;
   transition: color 0.2s, gap 0.2s;
 }
 
 .project-card__link:hover {
-  color: #a78bfa;
+  color: #E0E1DD;
   gap: 0.6rem;
 }
 

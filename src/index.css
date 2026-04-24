@@ -6,15 +6,14 @@
 
 html {
   scroll-behavior: smooth;
-  /* prevent any child from blowing out horizontal width */
   overflow-x: hidden;
 }
 
 body {
   margin: 0;
   overflow-x: hidden;
-  background-color: #0a0a0a;
-  color: #e2e8f0;
+  background-color: #778DA9;
+  color: #E0E1DD;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', 'Roboto',
     'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -47,12 +46,10 @@ a {
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
-  /* fixed creates a subtle parallax; falls back gracefully on mobile */
   background-attachment: fixed;
 }
 
 @media (max-width: 768px) {
-  /* fixed attachment causes blur/jank on iOS — use scroll instead */
   .page-bg {
     background-attachment: scroll;
   }
@@ -64,7 +61,7 @@ a {
 }
 
 .page-header__tag {
-  color: #7c6aff;
+  color: #C7F9CC;
   font-size: 0.9rem;
   font-weight: 600;
   letter-spacing: 0.08em;
@@ -75,7 +72,7 @@ a {
 .page-header__title {
   font-size: clamp(1.9rem, 6vw, 3rem);
   font-weight: 800;
-  color: #e2e8f0;
+  color: #E0E1DD;
   margin: 0;
   letter-spacing: -0.02em;
 }

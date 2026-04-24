@@ -1,5 +1,5 @@
 .footer {
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding: 1.75rem 0;
   margin-top: auto;
 }
@@ -16,7 +16,7 @@
 }
 
 .footer__copy {
-  color: #475569;
+  color: rgba(224, 225, 221, 0.55);
   font-size: 0.85rem;
   margin: 0;
 }
@@ -27,10 +27,9 @@
 }
 
 .footer__links a {
-  color: #475569;
+  color: rgba(224, 225, 221, 0.55);
   text-decoration: none;
   font-size: 0.85rem;
-  /* touch target */
   min-height: 44px;
   display: inline-flex;
   align-items: center;
@@ -38,7 +37,7 @@
 }
 
 .footer__links a:hover {
-  color: #7c6aff;
+  color: #C7F9CC;
 }
 
 @media (max-width: 480px) {
