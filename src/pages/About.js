@@ -1,4 +1,5 @@
 import heroImage from '../img/hero-image.jpg';
+import aboutmeImage from '../img/aboutme.jpg';
 import './About.css';
 
 const skills = [
@@ -22,6 +23,12 @@ const About = () => {
         </header>
 
         <section className="about__bio">
+          <div className="about__photo">
+            <img src={aboutmeImage} alt="Taylor Burdgess" className="about__avatar" />
+            <div className="about__ring about__ring--1" aria-hidden="true" />
+            <div className="about__ring about__ring--2" aria-hidden="true" />
+          </div>
+
           <div className="about__text">
             <p>
              My name is Taylor Burdgess. I was born and raised in Tampa, Florida. I currently attend the University of Central Florida. 

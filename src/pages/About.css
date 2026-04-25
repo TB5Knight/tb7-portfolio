@@ -13,6 +13,55 @@
   margin-bottom: 3.5rem;
 }
 
+/* ── Photo visual ───────────────────────────────────────────── */
+.about__photo {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 2.5rem;
+}
+
+.about__avatar {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  border: 3px solid rgba(199, 249, 204, 0.5);
+  box-shadow: 0 0 0 6px rgba(199, 249, 204, 0.1);
+  z-index: 1;
+  position: relative;
+  display: block;
+}
+
+.about__ring {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid rgba(199, 249, 204, 0.25);
+  animation: about-pulse-ring 3s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.about__ring--1 {
+  width: 210px;
+  height: 210px;
+  animation-delay: 0s;
+}
+
+.about__ring--2 {
+  width: 260px;
+  height: 260px;
+  animation-delay: 1s;
+}
+
+@keyframes about-pulse-ring {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50%       { opacity: 0.8; transform: scale(1.03); }
+}
+
 .about__text p {
   color: rgba(224, 225, 221, 0.8);
   font-size: clamp(0.95rem, 2.5vw, 1.05rem);
