@@ -32,10 +32,6 @@ const About = () => {
            This portfolio showcases school design projects and personal work I’ve completed recently to 
            highlight my creativity, skills, and passion for becoming a designer in the near future.
             </p>
-            <p>
-              I'm always looking for opportunities to collaborate on interesting
-              projects and grow as a developer.
-            </p>
           </div>
         </section>
 
