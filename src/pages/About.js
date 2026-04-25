@@ -4,7 +4,7 @@ import './About.css';
 const skills = [
   { category: 'Frontend', items: ['HTML', 'React', 'CSS', 'Javascript.'] },
   { category: 'Physical', items: ['Time management & prioritization', 'Creative Thinking', 'Clear written and verbal communication', 'Strategic planning'] },
-  { category: 'Tools', items: ['Adobe Photoshop', 'GitHub', 'VS Code', 'Figma', 'Graphic design'] },
+  { category: 'Tools', items: ['Adobe Photoshop', 'GitHub', 'VS Code', 'Figma', 'Canva', 'Graphic design'] },
 ];
 
 const About = () => {
