@@ -2,9 +2,9 @@ import heroImage from '../img/hero-image.jpg';
 import './About.css';
 
 const skills = [
-  { category: 'Frontend', items: ['React', 'JavaScript', 'HTML', 'CSS', 'TypeScript'] },
-  { category: 'Backend', items: ['Node.js', 'Express', 'Python', 'REST APIs'] },
-  { category: 'Tools', items: ['Git', 'GitHub', 'VS Code', 'Figma', 'Linux'] },
+  { category: 'Frontend', items: ['HTML', 'React', 'CSS', 'and Javascript.'] },
+  { category: 'Physical', items: ['Time management & prioritization', 'Creative Thinking', 'Clear written and verbal communication', 'Strategic planning'] },
+  { category: 'Tools', items: ['Adobe Photoshop', 'GitHub', 'VS Code', 'Figma', 'Graphic design'] },
 ];
 
 const About = () => {
