@@ -8,12 +8,14 @@ const projects = [
     id: 1,
     title: 'Hype Pilot',
     description:
-      'This is my planner design app called Hype Pilot. The app allows users to add tasks with due dates, view tasks in a calendar, label tasks by priority (Top Priority, Mid Priority, or Low Priority), track their progress, and receive reminder alerts for all tasks and upcoming due dates.Users can create an account and log in to access their personalized planner.',
+      'This is my planner design app called Hype Pilot. The app allows users to add tasks with due dates, view tasks in a calendar, label tasks by priority (Top Priority, Mid Priority, or Low Priority), track their progress, and receive reminder alerts for all tasks and upcoming due dates. Users can create an account and log in to access their personalized planner.',
     tags: ['React', 'Node.js', 'Supabase', 'Vercel'],
     image: hypePilot,
     imageAlt: 'Hype Pilot app screenshot',
-    link: 'https://hype-pilot-app.vercel.app/',
-    linkLabel: 'View Project',
+    liveLink: 'https://hype-pilot-app.vercel.app/',
+    liveLabel: 'Live Demo',
+    githubLink: 'https://github.com/TB5Knight/hype-pilot-app',
+    githubLabel: 'GitHub',
   },
   {
     id: 2,
@@ -23,8 +25,10 @@ const projects = [
     tags: ['HTML', 'CSS Stylesheets', 'Netlify'],
     image: knightHypeStudio,
     imageAlt: 'Knight Hype Studio app screenshot',
-    link: 'https://knighthypestudio3.netlify.app/',
-    linkLabel: 'View Project',
+    liveLink: 'https://knighthypestudio3.netlify.app/',
+    liveLabel: 'Live Demo',
+    githubLink: 'https://github.com/TB5Knight/Knight-hype-studio',
+    githubLabel: 'GitHub',
   },
 ];
 
@@ -43,7 +47,7 @@ const Projects = () => {
         </header>
 
         <div className="projects__grid">
-          {projects.map(({ id, title, description, tags, image, imageAlt, link, linkLabel }) => (
+          {projects.map(({ id, title, description, tags, image, imageAlt, liveLink, liveLabel, githubLink, githubLabel }) => (
             <article key={id} className="project-card">
 
               <div className="project-card__image-wrap">
@@ -68,12 +72,20 @@ const Projects = () => {
 
               <div className="project-card__footer">
                 <a
-                  href={link}
+                  href={liveLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="project-card__link"
+                  className="project-card__link project-card__link--primary"
                 >
-                  {linkLabel} &rarr;
+                  {liveLabel} &rarr;
+                </a>
+                <a
+                  href={githubLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="project-card__link project-card__link--secondary"
+                >
+                  {githubLabel} &rarr;
                 </a>
               </div>
 
